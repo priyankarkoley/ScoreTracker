@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,9 +13,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    static MainActivity ma;
-
-    ma = this;
     int score1 = 0;
     int score2 = 0;
     int score3 = 0;
@@ -32,13 +30,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                EditText txt1 = findViewById(R.id.new1);
-                int temp1 = Integer.parseInt(txt1.getText().toString());
+                EditText new1 = findViewById(R.id.new1);
+                int temp1 = Integer.parseInt(new1.getText().toString());
 
-                ma.score1 = ma.score1 + temp1;
+                score1 = score1 + temp1;
 
-                TextView score1 = (TextView) findViewById(R.id.score1);
-                score1.setText(""+score1);
+                TextView text1 = (TextView) findViewById(R.id.score1);
+                text1.setText(""+score1);
+                Log.v("myapppp", "\n\nhellllooooooo"+score1);
             }
         });
 
@@ -47,13 +46,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                EditText txt2 = findViewById(R.id.new2);
-                int temp2 = Integer.parseInt(txt2.getText().toString());
+                EditText new2 = findViewById(R.id.new2);
+                int temp2 = Integer.parseInt(new2.getText().toString());
 
-                ma.score2 = ma.score2 + temp2;
+                score2 = score2 + temp2;
 
-                TextView score2 = (TextView) findViewById(R.id.score2);
-                score2.setText(""+score2);
+                TextView text2 = (TextView) findViewById(R.id.score2);
+                text2.setText(""+score2);
             }
         });
 
@@ -62,13 +61,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                EditText txt3 = findViewById(R.id.new3);
-                int temp3 = Integer.parseInt(txt3.getText().toString());
+                EditText new3 = findViewById(R.id.new3);
+                int temp3 = Integer.parseInt(new3.getText().toString());
 
-                ma.score3 = ma.score3 + temp3;
+                score3 = score3 + temp3;
 
-                TextView score3 = (TextView) findViewById(R.id.score3);
-                score3.setText(""+score3);
+                TextView text3 = (TextView) findViewById(R.id.score3);
+                text3.setText(""+score3);
             }
         });
 
@@ -77,13 +76,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                EditText txt4 = findViewById(R.id.new4);
-                int temp4 = Integer.parseInt(txt4.getText().toString());
+                EditText new4 = findViewById(R.id.new4);
+                int temp4 = Integer.parseInt(new4.getText().toString());
 
-                ma.score4 = ma.score4 + temp4;
+                score4 = score4 + temp4;
 
-                TextView score4 = (TextView) findViewById(R.id.score4);
-                score4.setText(""+score4);
+                TextView text4 = (TextView) findViewById(R.id.score4);
+                text4.setText(""+score4);
             }
         });
 
@@ -92,13 +91,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                EditText txt5 = findViewById(R.id.new5);
-                int temp5 = Integer.parseInt(txt5.getText().toString());
+                EditText new5 = findViewById(R.id.new5);
+                int temp5 = Integer.parseInt(new5.getText().toString());
 
-                ma.score5 = ma.score5 + temp5;
+                score5 = score5 + temp5;
 
-                TextView score5 = (TextView) findViewById(R.id.score5);
-                score5.setText(""+score5);
+                TextView text5 = (TextView) findViewById(R.id.score5);
+                text5.setText(""+score5);
             }
         });
     }

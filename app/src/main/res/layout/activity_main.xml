@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/warmer_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="500dp"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:layout_margin="8dp">
+    android:layout_margin="8dp"
+    android:background="@color/warm_white">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,7 +30,8 @@
             android:hint="Player 1"
             android:padding="8dp"
             android:textAlignment="center"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:inputType="textCapWords"/>
 
         <TextView
             android:gravity="center"
@@ -76,7 +83,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/black"/>
+        android:background="@color/Divider_color"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -95,7 +102,8 @@
             android:hint="Player 1"
             android:padding="8dp"
             android:textAlignment="center"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:inputType="textCapWords"/>
 
         <TextView
             android:gravity="center"
@@ -147,7 +155,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/black"/>
+        android:background="@color/Divider_color"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -166,7 +174,8 @@
             android:hint="Player 1"
             android:padding="8dp"
             android:textAlignment="center"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:inputType="textCapWords" />
 
         <TextView
             android:gravity="center"
@@ -218,7 +227,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/black"/>
+        android:background="@color/Divider_color"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -237,7 +246,8 @@
             android:hint="Player 1"
             android:padding="8dp"
             android:textAlignment="center"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:inputType="textCapWords" />
 
         <TextView
             android:gravity="center"
@@ -289,7 +299,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/black"/>
+        android:background="@color/Divider_color"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -308,7 +318,8 @@
             android:hint="Player 1"
             android:padding="8dp"
             android:textAlignment="center"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:inputType="textCapWords"/>
 
         <TextView
             android:gravity="center"
@@ -360,6 +371,18 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/black"/>
+        android:background="@color/Divider_color"/>
 
 </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/accent_color"
+        android:layout_alignParentBottom="true"
+        android:text="RESET"
+        android:textColor="@color/text_black"
+        android:textSize="20sp" />
+
+</RelativeLayout>
