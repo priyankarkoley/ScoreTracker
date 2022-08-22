@@ -77,7 +77,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:hint="0"
-            android:inputType="number"
+            android:inputType="numberDecimal|numberSigned"
             android:padding="8dp" />
     </LinearLayout>
     <View
@@ -149,7 +149,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:hint="0"
-            android:inputType="number"
+            android:inputType="numberDecimal|numberSigned"
             android:padding="8dp" />
     </LinearLayout>
     <View
@@ -221,7 +221,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:hint="0"
-            android:inputType="number"
+            android:inputType="numberDecimal|numberSigned"
             android:padding="8dp" />
     </LinearLayout>
     <View
@@ -293,7 +293,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:hint="0"
-            android:inputType="number"
+            android:inputType="numberDecimal|numberSigned"
             android:padding="8dp" />
     </LinearLayout>
     <View
@@ -365,7 +365,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:hint="0"
-            android:inputType="number"
+            android:inputType="numberDecimal|numberSigned"
             android:padding="8dp" />
     </LinearLayout>
     <View
